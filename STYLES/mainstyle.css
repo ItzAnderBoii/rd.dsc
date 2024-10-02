@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	background: rgb(20, 20, 20, 1.0);
+}
+
+/* DIV ANIM */
+.menu, .menu-desc {
+	animation: Intro 5s;
+}
+
+/* NAV BAR */
+.navbar {
+	display: block;
+	background-size: cover;
+	background: rgb(20, 20, 20, 1.0);
+	overflow: hidden;
+	z-index: 10;
+	height: 100px;
+	width: 100%;
+	box-shadow: 0 0 1px rgb(20, 20, 20, 1.0),
+	0 0 2px rgb(22, 22, 22, 0.9),
+	0 0 4px rgb(26, 26, 26, 0.8),
+	0 0 8px rgb(26, 26, 26, 0.6);
+}
+
+.navbar .navbar-container {
+	display: flex;
+}
+
+.navbar img {
+	display: flex;
+	margin: 20px 80px auto;
+	height: 60px;
+	width: auto;
+	transition: 1s;
+}
+
+.navbar img:hover {
+	transition: 1s;
+	opacity: 0.7;
+	 transform: rotate(30deg);
+}
+
+/* MENU */
+.menu {
+	display: flex;
+  background: linear-gradient(to bottom, rgb(15, 15, 15, 1.0), rgb(20, 20, 20, 1.0));
+  height: 584px;
+  margin: 0 auto auto;
+  background-size: cover;
+  width: 100%;
+
+}
+
+.menu-desc h1 {
+	display: block;
+   font-family: Verdana;
+   font-size: 23px;
+   color: white;
+   margin: -380px auto auto;
+   text-align: center;
+}
+
+.menu-desc p {
+	display: block;
+   font-family: Verdana;
+   font-size: 20px;
+   color: white;
+   margin: 0px auto auto;
+   text-align: center;
+}
+
+.menu-desc a {
+	display: block;
+   font-family: Verdana;
+   font-size: 20px;
+   color: white;
+   margin: 100px auto auto;
+   text-align: center;
+   text-decoration: none;
+   border: 5px solid rgb(255, 255, 255, 0.5);
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 15px;
+   width: 25%;
+   transition: 1s;
+}
+
+.menu-desc a:hover {
+    transition: 1s;
+	 border: 5px solid rgb(255, 255, 255, 1);
+}
+
+/* KEYFRAMES */
+@keyframes Intro {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

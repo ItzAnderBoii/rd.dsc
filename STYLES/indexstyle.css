@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	background: rgb(20, 20, 20, 1.0);
+}
+
+.loader {
+	display: block;
+}
+
+.loader img {
+	display: flex;
+	margin: 250px auto auto;
+	height: 160px;
+	width: auto;
+	animation: spinLoader 2s infinite;
+
+}
+
+/* anim */
+@keyframes spinLoader {
+    from {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
