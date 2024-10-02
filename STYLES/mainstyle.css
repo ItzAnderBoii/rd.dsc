@@ -100,4 +100,37 @@ body {
 	to {
 		opacity: 1;
 	}
+
+	/* RESPONSIVE */
+
+/* MOBILE ONLY */
+@media (min-width: 305px) and (max-width: 412px) {
+.menu-desc h1 {
+	font-size: 13px;
+}
+
+.menu-desc p {
+	font-size: 10px;
+}
+
+.menu-desc a {
+	width: 50%;
+}
+}
+
+/* TABLETS ONLY */
+@media (min-width: 708px) and (max-width: 2048) {
+	.menu-desc h1 {
+		font-size: 15px;
+	}
+
+	.menu-desc p {
+		font-size: 13px;
+	}
+
+	.menu-desc a {
+		width: 50%;
+	}
+}
+
 }
