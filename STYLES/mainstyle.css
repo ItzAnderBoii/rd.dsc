@@ -4,7 +4,7 @@ body {
 }
 
 /* DIV ANIM */
-.menu, .menu-desc {
+.menu, .menu-desc, .map_1, .map-breaker {
 	animation: Intro 5s;
 }
 
@@ -91,6 +91,42 @@ body {
 	 border: 5px solid rgb(255, 255, 255, 1);
 }
 
+/* MAPS */
+
+.map-breaker {
+	display: flex;
+	margin: 90px auto;
+	border: 2px solid white;
+	width: 30%;
+	border-radius: 5px;
+}
+
+.map_1 img {
+	display: flex;
+	height: 500px;
+	width: auto;
+	margin: 100px auto auto;
+
+}
+
+.map_1 h1 {
+	display: block;
+	text-align: center;
+	margin: 50px auto;
+	font-family: Verdana;
+	font-size: 30px;
+	color: white;
+}
+
+.map_1 p {
+	display: block;
+	text-align: center;
+	margin: -40px auto;
+	font-family: Verdana;
+	font-size: 15px;
+	color: white;
+	padding-bottom: 50px;
+}
 /* KEYFRAMES */
 @keyframes Intro {
 	from {
@@ -100,37 +136,46 @@ body {
 	to {
 		opacity: 1;
 	}
+}
 
-	/* RESPONSIVE */
+/* RESPONSIVE */
 
 /* MOBILE ONLY */
-@media (min-width: 305px) and (max-width: 412px) {
+@media (min-width: 305px) and (max-width: 695px) {
 .menu-desc h1 {
-	font-size: 13px;
+	font-size: 19px;
 }
 
 .menu-desc p {
-	font-size: 10px;
+	font-size: 15px;
 }
 
 .menu-desc a {
 	width: 50%;
+}
+
+.map_1 img {
+	height: 390px;
 }
 }
 
 /* TABLETS ONLY */
 @media (min-width: 708px) and (max-width: 2048) {
 	.menu-desc h1 {
-		font-size: 15px;
+		font-size: 25px;
 	}
 
 	.menu-desc p {
-		font-size: 13px;
+		font-size: 19px;
 	}
 
 	.menu-desc a {
 		width: 50%;
 	}
+
+	.map_1 img {
+	height: 490px;
+}
 }
 
-}
+
